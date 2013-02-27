@@ -10,3 +10,10 @@ pre. >>> import tiger
 >>> tiger.hash("")
 '24F0130C63AC933216166E76B1BB925FF373DE2D49584E7A'
 
+h3. Unicode?
+
+....In case you don't want to handle dealing with unicode outside of using this module.
+
+pre. >>> import tiger
+>>> tiger.unicode_hash("derp")
+'24986b03964fccc0266d4573343f26d952bc6071a3bd1831'
