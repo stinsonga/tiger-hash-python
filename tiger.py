@@ -95,7 +95,10 @@ def tiger_compress(str, res):
 
 
 def unicode_hash(str):
-    return hash(unicode.encode(str, 'utf-8')).lower()
+    """ Just a wrapper for the main hash function. Handles unicode,
+    intended for use in webforms, or similar scenarios
+    """
+    return hash(unicode.encode(str, 'utf-8'))
 
 
 def hash(str):
